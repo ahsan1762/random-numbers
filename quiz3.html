@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 15S;
+            width: 20%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 10px;
+            padding-bottom: 50px;
+            align-items: center;
+            margin-top: 200px;
+            background-color: rgb(131, 131, 7);
+        }
+        p{
+            font-size: 30px;
+        }
+        button{
+            background-color: chocolate;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <h1>Quiz-3</h1>
+        
+
+        
+        <p id="num"></p>
+        <button onclick="clickme()">Genrate Random Number</button>
+       
+    </div>
+    <script>
+        function clickme(){
+            let min = 1;
+            let max = 101;
+
+            const Display = Math.floor(Math.random() * max)
+            
+            console.log(Display);
+            
+            document.getElementById("num").innerHTML = Display;  
+        }
+
+
+    </script>
+</body>
+</html>
